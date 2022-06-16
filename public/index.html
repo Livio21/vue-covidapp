@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="./logo.webp" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <title>Covid-19</title>
+  </head>
+  <body>
+    <noscript>
+      <div class="noscript">
+        <section class="noscript section">
+          <h1>
+            We're sorry but the page doesn't work properly without JavaScript
+            enabled. <br />
+            Please enable it to continue.
+          </h1>
+          <a
+            href="https://support.google.com/adsense/answer/12654?hl=en"
+            target="_blank"
+            >Click here for how to enable JS in Chrome.
+          </a>
+        </section>
+      </div>
+    </noscript>
+    <div id="app"></div>
+
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+
+  * {
+    font-family: "Poppins", sans-serif;
+  }
+  .noscript {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .noscript.section {
+    padding: 3rem;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+
+    border-radius: 10px;
+    filter: blur(0.5);
+    box-shadow: -1px 13px 33px -5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 13px 33px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 13px 33px -5px rgba(0, 0, 0, 0.75);
+  }
+  .noscript.section h1::before {
+    content: "⚠️";
+    margin: 3px;
+    position: absolute;
+    font-size: xx-large;
+    border-radius: 100%;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    animation: pulsation 1s infinite;
+  }
+  .noscript.section a {
+    text-decoration: none;
+    color: blue;
+    background-color: rgb(211, 211, 211);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .noscript.section a:hover {
+    color: rgb(0, 195, 255);
+    background-color: rgb(231, 231, 231);
+  }
+  @keyframes pulsation {
+    0% {
+      box-shadow: 0 0 0 0px rgb(255, 208, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+</style>

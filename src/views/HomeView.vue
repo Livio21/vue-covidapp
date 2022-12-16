@@ -42,7 +42,7 @@
     :src="require('@/assets/video.mp4')"
     overlay="linear-gradient(45deg,#2a4ae430,#fb949e6b)" 
     style="max-height: 400px; height: 100vh"
-    class="my-10 hover:scale-105 ease-in-out duration-300 "
+    class="my-10 hover:scale-105 ease-in-out duration-300 overflow-hidden"
      title="Covid-19 video." 
  >
     <h1 class="text-white text-center "></h1>
